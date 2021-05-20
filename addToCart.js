@@ -56,6 +56,7 @@ function deleteProduct(){
         trash[i].addEventListener('click', cartItemDelete,false);
     }   
 
+
     function cartItemDelete(event){        
             event.preventDefault();
             /*jshint validthis: true */
@@ -66,8 +67,7 @@ function deleteProduct(){
             
             sumQuantity();
     }
-                 
-    
+ 
 }
 
 //Суммирование цен товаров в корзине
