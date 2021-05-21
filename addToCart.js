@@ -93,3 +93,6 @@ function sumQuantity(){
     let quantity=document.querySelectorAll('.cart_item').length;
     document.querySelectorAll('.quantity')[0].innerText=`${quantity} /  `;
 }
+
+
+
