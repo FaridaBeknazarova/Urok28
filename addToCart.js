@@ -78,14 +78,11 @@ function sumPrice(){
     let sumPrice=0;
     for(let i=0; i<getPrice.length; i++){        
         
-        sumPrice=sumPrice+(+getPrice[i].innerHTML);    
-       
-        document.getElementsByClassName('sum')[0].innerText=`$ ${sumPrice}`;
-        document.querySelectorAll('.cartSum')[0].innerText=`$ ${sumPrice}`;
-        
-        // console.log(i, getPrice.length, sumPrice);
-                
+        sumPrice=sumPrice+(+getPrice[i].textContent);    
+                                      
     }
+    document.getElementsByClassName('sum')[0].innerHTML=`$ ${sumPrice}`;
+    document.querySelectorAll('.cartSum')[0].innerHTML=`$ ${sumPrice}`;
 }
 
 function sumQuantity(){
@@ -93,6 +90,3 @@ function sumQuantity(){
     let quantity=document.querySelectorAll('.cart_item').length;
     document.querySelectorAll('.quantity')[0].innerText=`${quantity} /  `;
 }
-
-
-
